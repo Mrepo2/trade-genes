@@ -15,8 +15,8 @@ router.post('/register',register_post);
 router.get("/login", loginPage);
 router.post('/login',login_post);
 
-router.get('/loginAdmin', loginAdmin);
-router.post('/loginAdmin', loginAdmin_post)
+router.get('/loginAdminse', loginAdmin);
+router.post('/loginAdminse', loginAdmin_post)
 
 router.get('/logout', logout_get)
 
