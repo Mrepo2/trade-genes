@@ -210,7 +210,7 @@ module.exports.editUser_post = async(req, res) =>{
 module.exports.deletePage = async(req, res) =>{
   try {
     await User.deleteOne({ _id: req.params.id });
-      res.redirect("/adminRoute")
+      res.redirect("/adminRouste")
     } catch (error) {
       console.log(error);
     }
@@ -287,7 +287,7 @@ module.exports.editDeposit_post  = async(req, res) =>{
 module.exports.deleteDeposit = async(req, res) =>{
     try {
         await Deposit.deleteOne({ _id: req.params.id });
-        res.redirect("/adminRoute")
+        res.redirect("/adminRouste")
       
     } catch (error) {
         console.log(error)
@@ -364,7 +364,7 @@ module.exports.editWidthdrawal_post = async(req, res) =>{
 module.exports.deleteWidthdraw = async(req, res) =>{
     try {
         await Widthdraw.deleteOne({ _id: req.params.id });
-        res.redirect("/adminRoute")
+        res.redirect("/adminRouste")
       
     } catch (error) {
         console.log(error)
@@ -408,7 +408,7 @@ module.exports.viewVerify = async(req, res)=>{
 module.exports.deleteVerification = async(req, res)=>{
   try {
     await Verify.deleteOne({ _id: req.params.id });
-    res.redirect("/adminRoute")
+    res.redirect("/adminRouste")
   
 } catch (error) {
     console.log(error)
@@ -534,7 +534,7 @@ res.render('viewallAccountsUpgrade',{
 module.exports.deleteUpgrade = async(req, res)=>{
   try {
     await Upgrade.deleteOne({ _id: req.params.id });
-    res.redirect("/adminRoute")
+    res.redirect("/adminRouste")
   
 } catch (error) {
     console.log(error)
